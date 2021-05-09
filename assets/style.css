@@ -14,28 +14,22 @@ body :visited{
 .container{
     padding: 1rem; 
     background-image: linear-gradient(rgba(123, 199, 209, 0.507), blue);
-    height: 100vh;
-    margin: 10px;
     margin-bottom: 0px;
-    width: 100vw;
-    position: sticky;
 }
 header {
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 255);
     padding: 1rem;
-    width: 100vw;
     }
-
-header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 a{
     text-decoration: none;
 }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 a.Nav-items{
     font-size: 15px;
     color: white;
@@ -68,15 +62,7 @@ main ul{
 footer{
     background-color: lightblue;
     padding: 1rem;
-    margin: auto;
-    position: absolute;
-    bottom: 1;
-    width: 100vw;
-    margin: 10px;
-    margin-top: 0px;
 }
-
-
 footer ul{
     font-size: 18px;
     text-decoration: underline;
@@ -86,12 +72,11 @@ footer ul{
     list-style: none;
 }
 
-@media (max-width: 1060px) 
-{body{width: 100vw;}
-}
-@media(max-width:570px){footer ul{
+@media screen and (max-width: 1060px) 
+    {body{width: 100vw;}}
+@media screen and(max-width:570px){footer ul{
     margin-left: .7rem;
 }}
-@media(max-width: 440px){main ul li{
+@media screen and(max-width: 440px){main ul li{
     margin: 0rem;
 }}
